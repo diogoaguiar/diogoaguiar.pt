@@ -1,0 +1,32 @@
+@import 'tailwindcss';
+@import '../../vendor/livewire/flux/dist/flux.css';
+
+@plugin '@tailwindcss/typography';
+
+@source '../views';
+@source '../../vendor/livewire/flux/dist/**/*.blade.php';
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+    --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+
+    --color-brand: #f59e0b;
+    --color-brand-light: #fbbf24;
+    --color-brand-dark: #d97706;
+
+    --color-accent: var(--color-brand);
+    --color-accent-content: #451a03;
+    --color-accent-foreground: #451a03;
+}
+
+@layer base {
+    .glow-hover {
+        transition: box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .glow-hover:hover {
+        box-shadow: 0 0 24px rgba(245, 158, 11, 0.12);
+    }
+}
