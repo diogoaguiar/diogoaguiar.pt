@@ -57,6 +57,9 @@ jobs:
       - name: Export Static Site
         run: php artisan site:export
 
+      - name: Add CNAME
+        run: echo 'diogoaguiar.pt' > dist/CNAME
+
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
         with:

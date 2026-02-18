@@ -24,9 +24,8 @@ class ExportSite extends Command
         // Render the homepage
         $html = view('pages.public.home')->render();
 
-        // Fix asset paths to be relative
+        // Fix asset paths for production
         $html = str_replace('http://localhost/', '/', $html);
-        $html = preg_replace('#(href|src)="/(build|flux)/#', '$1="./$2/', $html);
 
         File::put($output.'/index.html', $html);
 
