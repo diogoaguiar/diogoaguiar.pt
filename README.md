@@ -35,6 +35,27 @@ composer run dev
 
 Starts the PHP dev server, queue listener, log viewer (Pail), and Vite dev server concurrently.
 
+### Using Docker (Laravel Sail)
+
+Start the container:
+
+```bash
+./vendor/bin/sail up -d
+```
+
+Run setup inside the container:
+
+```bash
+./vendor/bin/sail composer setup
+```
+
+The site will be available at `http://localhost`. To run commands inside the container, prefix them with `./vendor/bin/sail`:
+
+```bash
+./vendor/bin/sail artisan test --compact
+./vendor/bin/sail npm run build
+```
+
 ## Testing
 
 ```bash
