@@ -44,6 +44,14 @@ class ExportSite extends Command
             File::copy($file->getPathname(), $destPath);
         }
 
+        // Copy Flux JS assets (served via routes, not in public/)
+        $fluxJs = base_path('vendor/livewire/flux/dist/flux-lite.min.js');
+
+        if (File::exists($fluxJs)) {
+            File::ensureDirectoryExists($output.'/flux');
+            File::copy($fluxJs, $output.'/flux/flux.js');
+        }
+
         $this->info("Site exported to {$output}");
 
         return self::SUCCESS;
