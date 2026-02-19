@@ -1,3 +1,7 @@
+# Project Notes
+
+- This is a **public repository**. Never commit secrets, credentials, API keys, or any sensitive information.
+
 <laravel-boost-guidelines>
 === foundation rules ===
 
