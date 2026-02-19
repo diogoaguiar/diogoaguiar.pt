@@ -4,27 +4,34 @@
 
 # Stack
 
-- Static single-page site: `index.html`
-- **Tailwind CSS v4** via standalone CLI (`@tailwindcss/cli`)
+- Static multi-page site built with **Vite**
+- **Tailwind CSS v4** via `@tailwindcss/vite`
 - **Alpine.js** via CDN (for mobile menu toggle)
+- **Handlebars** templates with i18n (PT + EN)
 - Deployed to **GitHub Pages** at diogoaguiar.pt
 
 # Structure
 
-- `index.html` — the entire site
+- `index.html` — Vite entry stub (PT)
+- `en/index.html` — Vite entry stub (EN)
+- `src/template.html` — Single Handlebars template (source of truth)
 - `src/app.css` — Tailwind source (imports, theme, custom styles)
-- `dist/app.css` — compiled CSS output (gitignored, built by CI)
-- `favicon.ico`, `favicon.svg`, `apple-touch-icon.png`, `robots.txt` — static assets at root
-- `CNAME` — GitHub Pages custom domain
+- `src/i18n/pt.json` — Portuguese translations
+- `src/i18n/en.json` — English translations
+- `plugins/i18n.js` — Custom Vite plugin for i18n template rendering
+- `vite.config.js` — Vite configuration
+- `public/` — Static assets (CNAME, favicons, robots.txt, webmanifest)
+- `dist/` — Build output (gitignored)
 
 # Development
 
-- `npm run dev` — watch mode for CSS
-- `npm run build` — production CSS build
-- Open `index.html` directly in a browser to preview
+- `npm run dev` — Vite dev server with hot reload
+- `npm run build` — Production build to `dist/`
+- `npm run preview` — Preview production build locally
 
 # Conventions
 
-- All content is inlined in `index.html`
+- All translatable content uses Handlebars placeholders (`{{t.keyName}}`) in `src/template.html`
+- Translation strings live in `src/i18n/*.json` files
 - Icons are inlined SVGs from Heroicons
-- No build step for HTML or JS — only CSS needs compilation
+- Static assets go in `public/` (copied verbatim to `dist/` by Vite)

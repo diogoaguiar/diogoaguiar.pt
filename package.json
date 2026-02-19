@@ -1,12 +1,16 @@
 {
     "private": true,
+    "type": "module",
     "scripts": {
-        "build": "npx @tailwindcss/cli -i src/app.css -o dist/app.css --minify",
-        "dev": "npx @tailwindcss/cli -i src/app.css -o dist/app.css --watch"
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
     },
     "devDependencies": {
+        "@tailwindcss/typography": "^0.5",
+        "@tailwindcss/vite": "^4.2.0",
+        "handlebars": "^4.7.8",
         "tailwindcss": "^4.0",
-        "@tailwindcss/cli": "^4.0",
-        "@tailwindcss/typography": "^0.5"
+        "vite": "^7.3.1"
     }
 }
