@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt" class="scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Diogo Aguiar</title>
-    <meta name="description" content="Parceiro tecnológico para empresas que querem avançar.">
+    <meta name="description" content="Technology partner for businesses that want to move forward.">
 
     <link rel="alternate" hreflang="pt" href="/">
     <link rel="alternate" hreflang="en" href="/en">
@@ -30,28 +30,28 @@
                 type="button"
                 class="inline-flex size-10 shrink-0 items-center justify-center rounded-lg text-slate-500 hover:bg-slate-100 hover:text-slate-800 lg:hidden"
                 @click="sidebarOpen = true"
-                aria-label="Abrir menu"
+                aria-label="Open menu"
             >
                 <svg class="size-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M2 6.75A.75.75 0 0 1 2.75 6h14.5a.75.75 0 0 1 0 1.5H2.75A.75.75 0 0 1 2 6.75Zm0 6.5a.75.75 0 0 1 .75-.75h14.5a.75.75 0 0 1 0 1.5H2.75a.75.75 0 0 1-.75-.75Z" clip-rule="evenodd"/>
                 </svg>
             </button>
 
-            <a href="/" class="flex items-center gap-2 max-lg:hidden">
+            <a href="/en" class="flex items-center gap-2 max-lg:hidden">
                 <div class="flex size-7 shrink-0 items-center justify-center rounded-md bg-gradient-to-br from-amber-400 to-orange-500 text-sm font-bold text-white">DA</div>
                 <span class="text-sm font-medium text-slate-800">Diogo Aguiar</span>
             </a>
 
             <nav class="ml-6 flex items-center gap-1 max-lg:hidden">
-                <a href="#about" class="rounded-lg px-3 py-1.5 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">Sobre</a>
-                <a href="#approach" class="rounded-lg px-3 py-1.5 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">Abordagem</a>
-                <a href="#services" class="rounded-lg px-3 py-1.5 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">Serviços</a>
-                <a href="#contact" class="rounded-lg px-3 py-1.5 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">Contacto</a>
+                <a href="#about" class="rounded-lg px-3 py-1.5 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">About</a>
+                <a href="#approach" class="rounded-lg px-3 py-1.5 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">Approach</a>
+                <a href="#services" class="rounded-lg px-3 py-1.5 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">Services</a>
+                <a href="#contact" class="rounded-lg px-3 py-1.5 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">Contact</a>
             </nav>
 
             <div class="flex-1"></div>
 
-            <a href="/en" class="rounded-lg px-3 py-1.5 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">EN</a>
+            <a href="/" class="rounded-lg px-3 py-1.5 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">PT</a>
         </div>
     </header>
 
@@ -81,7 +81,7 @@
         x-cloak
     >
         <div class="flex items-center justify-between">
-            <a href="/" class="flex items-center gap-2 px-2" @click="sidebarOpen = false">
+            <a href="/en" class="flex items-center gap-2 px-2" @click="sidebarOpen = false">
                 <div class="flex size-7 shrink-0 items-center justify-center rounded-md bg-gradient-to-br from-amber-400 to-orange-500 text-sm font-bold text-white">DA</div>
                 <span class="text-sm font-medium text-slate-800">Diogo Aguiar</span>
             </a>
@@ -89,7 +89,7 @@
                 type="button"
                 class="inline-flex size-10 items-center justify-center rounded-lg text-slate-500 hover:bg-slate-100 hover:text-slate-800"
                 @click="sidebarOpen = false"
-                aria-label="Fechar menu"
+                aria-label="Close menu"
             >
                 <svg class="size-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
@@ -100,26 +100,26 @@
         <nav class="flex flex-col">
             <a href="#about" @click="sidebarOpen = false" class="flex h-10 items-center gap-3 rounded-lg px-3 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">
                 <svg class="size-4 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/></svg>
-                Sobre
+                About
             </a>
             <a href="#approach" @click="sidebarOpen = false" class="flex h-10 items-center gap-3 rounded-lg px-3 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">
                 <svg class="size-4 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
-                Abordagem
+                Approach
             </a>
             <a href="#services" @click="sidebarOpen = false" class="flex h-10 items-center gap-3 rounded-lg px-3 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">
                 <svg class="size-4 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M20.25 14.15v4.25c0 1.094-.787 2.036-1.872 2.18-2.087.277-4.216.42-6.378.42s-4.291-.143-6.378-.42c-1.085-.144-1.872-1.086-1.872-2.18v-4.25m16.5 0a2.18 2.18 0 0 0 .75-1.661V8.706c0-1.081-.768-2.015-1.837-2.175a48.114 48.114 0 0 0-3.413-.387m4.5 8.006c-.194.165-.42.295-.673.38A23.978 23.978 0 0 1 12 15.75c-2.648 0-5.195-.429-7.577-1.22a2.016 2.016 0 0 1-.673-.38m0 0A2.18 2.18 0 0 1 3 12.489V8.706c0-1.081.768-2.015 1.837-2.175a48.111 48.111 0 0 1 3.413-.387m7.5 0V5.25A2.25 2.25 0 0 0 13.5 3h-3a2.25 2.25 0 0 0-2.25 2.25v.894m7.5 0a48.667 48.667 0 0 0-7.5 0"/></svg>
-                Serviços
+                Services
             </a>
             <a href="#contact" @click="sidebarOpen = false" class="flex h-10 items-center gap-3 rounded-lg px-3 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">
                 <svg class="size-4 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/></svg>
-                Contacto
+                Contact
             </a>
         </nav>
 
         <div class="mt-auto border-t border-slate-200 pt-4">
-            <a href="/en" class="flex h-10 items-center gap-3 rounded-lg px-3 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">
+            <a href="/" class="flex h-10 items-center gap-3 rounded-lg px-3 text-sm font-medium text-slate-500 hover:bg-slate-100 hover:text-slate-800">
                 <svg class="size-4 shrink-0" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 21l5.25-11.25L21 21m-9-3h7.5M3 5.621a48.474 48.474 0 016-.371m0 0c1.12 0 2.233.038 3.334.114M9 5.25V3m3.334 2.364C11.176 10.658 7.69 15.08 3 17.502m9.334-12.138c.896.061 1.785.147 2.666.257m-4.589 8.495a18.023 18.023 0 01-3.827-5.802"/></svg>
-                EN
+                PT
             </a>
         </div>
     </aside>
@@ -135,19 +135,19 @@
                 </p>
 
                 <h1 class="text-4xl font-bold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl">
-                    Transformar Ideias em Soluções que Geram Resultados
+                    Turning Ideas Into Solutions That Drive Results
                 </h1>
 
                 <p class="mt-6 text-lg leading-relaxed text-slate-500 sm:text-xl">
-                    Trabalho com empresas para resolver problemas reais através de tecnologia, desde a descoberta e estratégia até à criação de produtos com impacto tangível.
+                    I partner with companies to solve real problems through technology, from discovery and strategy to building products that create tangible impact.
                 </p>
 
                 <div class="mt-10 flex items-center justify-center gap-4">
                     <a href="#contact" class="inline-flex items-center rounded-lg bg-amber-500 px-4 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-amber-600">
-                        Entrar em Contacto
+                        Get in Touch
                     </a>
                     <a href="#about" class="inline-flex items-center rounded-lg px-4 py-2.5 text-sm font-medium text-slate-600 transition hover:bg-slate-100 hover:text-slate-800">
-                        Saber Mais
+                        Learn More
                     </a>
                 </div>
             </div>
@@ -157,18 +157,18 @@
         <section id="about" class="scroll-mt-20 px-6 py-20">
             <div class="mx-auto max-w-7xl">
                 <div class="mb-12">
-                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Sobre</h2>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">About</h2>
                 </div>
 
                 <div class="prose prose-slate max-w-none prose-headings:text-slate-900 prose-a:text-amber-600 hover:prose-a:text-amber-700">
-                    <h2>A Versão Curta</h2>
-                    <p>Engenheiro de software com mais de 10 anos em desenvolvimento de software e mais de 15 anos na área tecnológica. Apaixonado por usar a tecnologia como ferramenta de impacto nos negócios. Não apenas escrever código, mas resolver problemas que importam.</p>
+                    <h2>The Short Version</h2>
+                    <p>A software engineer with over 10 years in software development and more than 15 years in the broader tech field. Passionate about using technology as a tool for business impact. Not just writing code, but solving problems that matter.</p>
 
-                    <h2>Como Trabalho</h2>
-                    <p>Envolvo-me cedo e mantenho-me próximo do problema. Isso significa compreender o contexto do negócio, mapear oportunidades e trabalhar lado a lado com as equipas para desenhar a solução certa. Do primeiro conceito à produção, trago pensamento estratégico e execução prática.</p>
+                    <h2>How I Work</h2>
+                    <p>I get involved early and stay close to the problem. That means understanding the business context, mapping out opportunities, and working alongside teams to shape the right solution. From first concept to production, I bring both strategic thinking and hands-on execution.</p>
 
-                    <h2>O Que Me Move</h2>
-                    <p>Construir coisas que criam valor real. Acredito que as melhores soluções tecnológicas nascem de uma compreensão profunda do problema, não de saltar diretamente para o código. Cada projeto é uma oportunidade de ajudar um negócio a avançar.</p>
+                    <h2>What Drives Me</h2>
+                    <p>Building things that create real value. I believe the best technology solutions come from deeply understanding the problem, not from jumping straight to code. Every engagement is an opportunity to help a business move forward.</p>
                 </div>
             </div>
         </section>
@@ -177,7 +177,7 @@
         <section id="approach" class="scroll-mt-20 px-6 py-20">
             <div class="mx-auto max-w-7xl">
                 <div class="mb-12">
-                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Abordagem</h2>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Approach</h2>
                 </div>
 
                 <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -185,24 +185,24 @@
                         <div class="mb-4 flex size-10 items-center justify-center rounded-lg bg-gradient-to-br from-amber-100 to-orange-100">
                             <svg class="size-5 text-amber-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"/></svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-slate-900">Descoberta &amp; Estratégia</h3>
-                        <p class="mt-2 text-sm leading-relaxed text-slate-500">Compreender o contexto do seu negócio, identificar oportunidades e definir o caminho certo a seguir.</p>
+                        <h3 class="text-lg font-semibold text-slate-900">Discovery &amp; Strategy</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-slate-500">Understanding your business context, identifying opportunities, and defining the right path forward.</p>
                     </div>
 
                     <div class="glow-hover group rounded-xl border border-slate-200 bg-white p-6 transition hover:border-amber-300">
                         <div class="mb-4 flex size-10 items-center justify-center rounded-lg bg-gradient-to-br from-amber-100 to-orange-100">
                             <svg class="size-5 text-amber-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/></svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-slate-900">Da Ideia ao Produto</h3>
-                        <p class="mt-2 text-sm leading-relaxed text-slate-500">Construir provas de conceito e MVPs, iterar rapidamente e moldar soluções desde o início.</p>
+                        <h3 class="text-lg font-semibold text-slate-900">From Idea to Product</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-slate-500">Building proofs of concept and MVPs, iterating fast, and shaping solutions from the ground up.</p>
                     </div>
 
                     <div class="glow-hover group rounded-xl border border-slate-200 bg-white p-6 transition hover:border-amber-300">
                         <div class="mb-4 flex size-10 items-center justify-center rounded-lg bg-gradient-to-br from-amber-100 to-orange-100">
                             <svg class="size-5 text-amber-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .657-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z"/></svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-slate-900">Para Além da Execução</h3>
-                        <p class="mt-2 text-sm leading-relaxed text-slate-500">Contribuir para definir e estruturar a solução. Não apenas construir o que é pedido, mas o que é necessário.</p>
+                        <h3 class="text-lg font-semibold text-slate-900">Beyond Execution</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-slate-500">Contributing to defining and structuring the solution. Not just building what's asked, but what's needed.</p>
                     </div>
                 </div>
             </div>
@@ -212,7 +212,7 @@
         <section id="services" class="scroll-mt-20 px-6 py-20">
             <div class="mx-auto max-w-7xl">
                 <div class="mb-12">
-                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Serviços</h2>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Services</h2>
                 </div>
 
                 <div class="grid gap-6 sm:grid-cols-2">
@@ -220,32 +220,32 @@
                         <div class="mb-4 flex size-10 items-center justify-center rounded-lg bg-gradient-to-br from-amber-100 to-orange-100">
                             <svg class="size-5 text-amber-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/></svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-slate-900">Descoberta &amp; Estratégia</h3>
-                        <p class="mt-2 text-sm leading-relaxed text-slate-500">Mapear os desafios do seu negócio em oportunidades tecnológicas. Ajudo a definir o que construir e porquê, antes de escrever uma única linha de código.</p>
+                        <h3 class="text-lg font-semibold text-slate-900">Discovery &amp; Strategy</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-slate-500">Mapping your business challenges to technology opportunities. I help define what to build and why, before writing a single line of code.</p>
                     </div>
 
                     <div class="glow-hover group rounded-xl border border-slate-200 bg-white p-6 transition hover:border-amber-300">
                         <div class="mb-4 flex size-10 items-center justify-center rounded-lg bg-gradient-to-br from-amber-100 to-orange-100">
                             <svg class="size-5 text-amber-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M9.75 3.104v5.714a2.25 2.25 0 0 1-.659 1.591L5 14.5M9.75 3.104c-.251.023-.501.05-.75.082m.75-.082a24.301 24.301 0 0 1 4.5 0m0 0v5.714c0 .597.237 1.17.659 1.591L19.8 15.3M14.25 3.104c.251.023.501.05.75.082M19.8 15.3l-1.57.393A9.065 9.065 0 0 1 12 15a9.065 9.065 0 0 0-6.23.693L5 14.5m14.8.8 1.402 1.402c1.232 1.232.65 3.318-1.067 3.611A48.309 48.309 0 0 1 12 21c-2.773 0-5.491-.235-8.135-.687-1.718-.293-2.3-2.379-1.067-3.61L5 14.5"/></svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-slate-900">Prova de Conceito &amp; MVP</h3>
-                        <p class="mt-2 text-sm leading-relaxed text-slate-500">Validar ideias rapidamente com protótipos focados. Obter feedback cedo, reduzir risco e ganhar confiança antes de escalar.</p>
+                        <h3 class="text-lg font-semibold text-slate-900">Proof of Concept &amp; MVP</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-slate-500">Validating ideas quickly with focused prototypes. Get early feedback, reduce risk, and build confidence before scaling.</p>
                     </div>
 
                     <div class="glow-hover group rounded-xl border border-slate-200 bg-white p-6 transition hover:border-amber-300">
                         <div class="mb-4 flex size-10 items-center justify-center rounded-lg bg-gradient-to-br from-amber-100 to-orange-100">
                             <svg class="size-5 text-amber-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"/></svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-slate-900">Desenvolvimento de Produto</h3>
-                        <p class="mt-2 text-sm leading-relaxed text-slate-500">Desenvolvimento completo de produtos de software, da arquitetura à entrega. Construído para durar, desenhado para evoluir.</p>
+                        <h3 class="text-lg font-semibold text-slate-900">Product Development</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-slate-500">End-to-end development of software products, from architecture to delivery. Built to last, designed to evolve.</p>
                     </div>
 
                     <div class="glow-hover group rounded-xl border border-slate-200 bg-white p-6 transition hover:border-amber-300">
                         <div class="mb-4 flex size-10 items-center justify-center rounded-lg bg-gradient-to-br from-amber-100 to-orange-100">
                             <svg class="size-5 text-amber-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z"/></svg>
                         </div>
-                        <h3 class="text-lg font-semibold text-slate-900">Liderança Tecnológica</h3>
-                        <p class="mt-2 text-sm leading-relaxed text-slate-500">Orientação estratégica para as suas decisões tecnológicas. Revisão de arquitetura, mentoria de equipas e apoio prático quando mais precisa.</p>
+                        <h3 class="text-lg font-semibold text-slate-900">Technology Leadership</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-slate-500">Strategic guidance for your technology decisions. Architecture reviews, team mentoring, and hands-on support when you need it most.</p>
                     </div>
                 </div>
             </div>
@@ -255,12 +255,12 @@
         <section id="contact" class="scroll-mt-20 px-6 py-20">
             <div class="mx-auto max-w-7xl">
                 <div class="mb-12">
-                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Contacto</h2>
+                    <h2 class="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">Contact</h2>
                 </div>
 
                 <div class="mx-auto max-w-lg">
                     <p class="mb-8 text-center text-lg text-slate-500">
-                        Quer trabalhar em conjunto ou simplesmente dizer olá? Entre em contacto através de qualquer um destes canais.
+                        Want to work together or just say hello? Reach out through any of these channels.
                     </p>
 
                     <div class="space-y-4">

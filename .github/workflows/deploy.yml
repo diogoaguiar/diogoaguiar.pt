@@ -39,6 +39,7 @@ jobs:
           cp favicon.ico favicon-32x32.png favicon-16x16.png apple-touch-icon.png _site/
           cp android-chrome-192x192.png android-chrome-512x512.png site.webmanifest _site/
           cp -r dist _site/
+          cp -r en _site/
 
       - name: Upload Pages Artifact
         uses: actions/upload-pages-artifact@v3
